@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:paddingBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ListView
+                android:id="@+id/listViewItems"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/roundedcorners"
+                android:backgroundTint="@color/beige"
+                android:layout_weight="1"
+                />
+
+            <SearchView
+                android:id="@+id/searchView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/listViewItems"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@id/buttonChooseCategory"
+                android:layout_marginRight="10dp"
+                android:queryHint="Search Book Name"
+                android:background="@drawable/roundedcorners">
+            </SearchView>
+
+
+            <Button
+                android:id="@+id/buttonChooseCategory"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/listViewItems"
+                android:text="Category"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/roundedcorners"
+                android:backgroundTint="@color/darkBlue"
+                android:layout_alignParentRight="true"
+                ></Button>
+
+           <TextView
+               android:id="@+id/textViewCartInfo"
+               android:scrollbars = "vertical"
+               android:layout_width="match_parent"
+               android:layout_height="80dp"
+               android:layout_below="@id/searchView"
+               android:layout_marginTop="20dp"
+               android:fontFamily="monospace"
+               android:backgroundTint="@color/lightBlue"
+               android:background="@drawable/roundedcorners">
+           </TextView>
+
+            <EditText
+                android:id="@+id/editTextYourName"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:hint="Your Name"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:textSize="14dp"
+                android:layout_below="@id/textViewCartInfo"
+                ></EditText>
+
+            <EditText
+                android:id="@+id/editTextPhoneNo"
+                android:inputType="phone"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:hint="Phone No"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:textSize="14dp"
+                android:layout_toRightOf="@id/editTextYourName"
+                android:layout_below="@id/textViewCartInfo"
+                ></EditText>
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:inputType="textEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:layout_marginTop="10dp"
+                android:textSize="14dp"
+                android:layout_toRightOf="@id/editTextPhoneNo"
+                android:layout_below="@id/textViewCartInfo"
+                ></EditText>
+
+            <Button
+                android:id="@+id/buttonCheckout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Checkout ($0)"
+                android:layout_below="@id/editTextYourName"
+                android:background="@drawable/roundedcorners"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/beige">
+            </Button>
+
+        </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/cat_action"
+        android:title="Action" />
+    <item android:id="@+id/cat_horror"
+        android:title="Horror" />
+    <item android:id="@+id/cat_romance"
+        android:title="Romance" />
+    <item android:id="@+id/cat_all"
+        android:title="All" />
+</menu>
