@@ -18,7 +18,7 @@
             <ListView
                 android:id="@+id/listViewItems"
                 android:layout_width="match_parent"
-                android:layout_height="300dp"
+                android:layout_height="320dp"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/roundedcorners"
                 android:backgroundTint="@color/beige"
@@ -106,7 +106,7 @@
                 android:text="Checkout ($0)"
                 android:layout_below="@id/editTextYourName"
                 android:background="@drawable/roundedcorners"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
                 android:backgroundTint="@color/beige">
             </Button>
